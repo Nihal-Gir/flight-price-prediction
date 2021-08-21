@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Flight Price Prediction</title>
+    <link rel = 'stylesheet' href = {{ url_for('static', filename = 'style.css') }}>
+    <!-- <link rel = 'stylesheet' href = '/static/style.css'> -->
+
+</head>
+
+<body>
+    <navbar class = 'navbar'>
+        <p>Flight Price Prediction</p>
+    </navbar>
+    <br>
+    <form action = '\predict' method = 'POST'>
+        <div class = 'date'>
+            <div class = 'ddate'>
+                <label>Departure Date</label>
+                <p><input class = 'datetime' type = 'datetime-local' name = 'departure' required = 'required'></p>
+            </div>    
+            <div class = 'adate'>
+                <label>Arrival Date</label>
+                <p><input class = 'datetime' type = 'datetime-local' name = 'arrival' required = 'required'></p>
+            </div>
+        </div>    
+
+        <div class="sd">
+
+            <div class="source">
+                <label>Source</label>
+                <p>
+                    <select name = 'source' required = 'required'>
+                        <option name = 'banglore'>Banglore</option>
+                        <option name = 'delhi'>Delhi</option>
+                        <option name = 'chennai'>Chennai</option>
+                        <option name = 'kolkata'>Kolkata</option>
+                        <option name = 'mumbai'>Mumbai</option>
+                    </select>
+                </p>
+            </div>
+
+            <div class="destination">
+                <label>Destination</label>
+                <p>
+                    <select name = 'destination' required = 'required'>
+                        <option name = 'banglore'>Banglore</option>
+                        <option name = 'delhi'>Delhi</option>
+                        <option name = 'cochin'>Cochin</option>
+                        <option name = 'kolkata'>Kolkata</option>
+                        <option name = 'newdelhi'>New Delhi</option>
+                        <option name = 'hyderabad'>Hyderabad</option>
+                    </select>
+                </p>
+            </div>
+
+        </div>
+
+        <div class = 'as'>
+            <div class = 'stops'>
+                <label>Number of Stops</label>
+                <p>
+                    <select name = 'stops' required = 'required'>
+                        <option name = 'non-stop'>Non-stop</option>
+                        <option name = '1 stop'>1 Stop</option>
+                        <option name = '2 stops'>2 Stops</option>
+                        <option name = '3 stops'>3 Stops</option>
+                        <option name = '4 stops'>4 Stops</option>
+                    </select>
+                </p>
+            </div>
+
+            <div class = airline>
+                <label>Name of the Airline</label>
+                <p>
+                    <select name = 'airline' required = 'required'>
+                        <option name = 'air asia'>Air Asia</option>
+                        <option name = 'air india'>Air India</option>
+                        <option name = 'go air'>GoAir</option>
+                        <option name = 'indigo'>IndiGo</option>
+                        <option name = 'jet airways'>Jet Airways</option>
+                        <option name = 'jet airways business'>Jet Airways Business</option>
+                        <option name = 'multiple carriers'>Multiple carriers</option>
+                        <option name = 'multiple carriers premium economy'>Multiple carriers Premium economy</option>
+                        <option name = 'spicejet'>SpiceJet</option>
+                        <option name = 'trujet'>Trujet</option>
+                        <option name = 'vistara'>Vistara</option>
+                        <option name = 'vistara premium economy'>Vistara Premium economy</option>
+                    </select>
+                </p>
+            </div>
+        </div>
+
+        <input class = 'button' type = 'submit' value = 'Submit'>
+
+    </form>
+
+    <h3 class = predict>{{ price_predictions }} </h3>
+
+</body>
+
+</html>

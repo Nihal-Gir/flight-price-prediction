@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+form p {
+  margin-top: 0.75em;
+}
+
+form label {
+  font-size: 1.5em;
+}
+
+.navbar p {
+  margin: 0em 0em 1em 0em;
+  color: blue;
+  background-color: white;
+  padding: 0.75em 0.5em 0.75em 5em;
+  font-size: 1.25em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2.5em;
+}
+
+.date .ddate {
+  padding-left: 20em;
+}
+
+.date .adate {
+  padding-left: 21.5em;
+}
+
+.sd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 4em;
+}
+
+.sd .source {
+  padding-left: 20em;
+}
+
+.sd .destination {
+  padding-left: 30em;
+}
+
+.as {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 4em;
+}
+
+.as .stops {
+  padding-left: 20em;
+}
+
+.as .airline {
+  padding-left: 25.5em;
+}
+
+.button {
+  margin-top: 3.5em;
+  margin-bottom: 1.5em;
+  margin-left: 32.5em;
+  padding: .5em 1.5em;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 7.5px;
+  background-color: #0975ce;
+  color: white;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.predict {
+  text-transform: uppercase;
+  color: black;
+  margin-left: 27.5em;
+}
+
+.datetime {
+  border: 2px solid skyblue;
+  border-radius: 7.5px;
+  padding: .25em;
+}
+
+select {
+  border: 2px solid skyblue;
+  border-radius: 7.5px;
+  padding: .25em;
+}
+/*# sourceMappingURL=style.css.map */

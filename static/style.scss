@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    background-color: #f2f2f2;
+}
+form {
+    p{
+        margin-top: 0.75em;
+    }
+    label{
+        font-size: 1.5em;
+    }    
+}
+.navbar p{
+    margin: 0em 0em 1em 0em;
+    color:blue;
+    background-color: white;
+    padding: 0.75em 0.5em 0.75em 5em;
+    font-size: 1.25em;
+    text-align: left;
+    text-transform: uppercase;
+}
+.date{
+    display: flex;
+    padding-top: 2.5em;
+    .ddate{
+        padding-left: 20em;
+    }
+    .adate{
+        padding-left:21.5em;
+    }
+}
+.sd{
+    display: flex;
+    padding-top: 4em;
+    .source{
+        padding-left: 20em;
+    }
+    .destination{
+       padding-left:30em;
+    }
+}
+.as{
+    display: flex;
+    padding-top: 4em;
+    .stops{
+        padding-left: 20em;
+    }
+    .airline{
+        padding-left:25.5em;
+    }
+}
+.button{
+    margin-top: 3.5em;
+    margin-bottom: 1.5em;
+    margin-left: 32.5em;
+    padding: .5em 1.5em;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 7.5px;
+    background-color: rgb(9, 117, 206);
+    color: white;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.predict{
+    text-transform: uppercase;
+    color: black;
+    margin-left: 27.5em;
+}
+.datetime{
+    border: 2px solid skyblue;
+    border-radius: 7.5px;
+    padding: .25em;
+}
+select{
+    border: 2px solid skyblue;
+    border-radius: 7.5px;
+    padding: .25em;
+}
